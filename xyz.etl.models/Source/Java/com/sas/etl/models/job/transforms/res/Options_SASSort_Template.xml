@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PromptGroup obj="p1" promptId="PromptGroup_1268234328771_662917" version="1.0">
+    <DefinitionsAndSubgroups>
+        <PromptGroup obj="p2" promptId="PromptGroup_1268234328772_904364">
+            <DefinitionsAndSubgroups>
+                <TextDefinition allowUserValues="false" name="Duplicates" obj="p3" promptId="PromptDef_1161287965441_888635">
+                    <Label>
+                        <Text obj="p4" xml:lang="en-US">Remove duplicate records:</Text>
+                        <Text obj="p5" xml:lang="fr">Supprimer les enregistrements en double :</Text>
+                        <Text obj="p6" xml:lang="it">Rimuovi record duplicati:</Text>
+                        <Text obj="p7" xml:lang="de">Doppelte Datensätze entfernen:</Text>
+                        <Text obj="p8" xml:lang="ja">重複レコードの削除:</Text>
+                        <Text obj="p9" xml:lang="ko">중복된 레코드 제거:</Text>
+                        <Text obj="p10" xml:lang="zh-CN">删除重复记录:</Text>
+                        <Text obj="p11" xml:lang="es">Eliminar registros duplicados:</Text>
+                        <Text obj="p12" xml:lang="zh-TW">移除重複記錄:</Text>
+                        <Text obj="p13" xml:lang="zh-HK">移除重複記錄:</Text>
+                        <Text obj="p14" xml:lang="pl">Usuń zduplikowane rekordy:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p15" xml:lang="en-US">Removes duplicate records, NODUPKEY removes records with duplicate keys and NODUPRECS removes duplicate records.</Text>
+                        <Text obj="p16" xml:lang="fr">Supprime les enregistrements en double ; NODUPKEY supprime les enregistrements ayant des clés en double et NODUPRECS supprime les enregistrements en double.</Text>
+                        <Text obj="p17" xml:lang="it">Rimuovi i record duplicati; NODUPKEY rimuove i record con chiavi duplicate e NODUPRECS rimuove i record duplicati.</Text>
+                        <Text obj="p18" xml:lang="de">Entfernt doppelte Datensätze. NODUPKEY entfernt Datensätze mit doppelten Schlüsseln und NODUPRECS entfernt doppelte Datensätze.</Text>
+                        <Text obj="p19" xml:lang="ja">重複レコードを削除します。NODUPKEYはキーが重複するレコードを削除し、NODUPRECSは重複レコードを削除します。</Text>
+                        <Text obj="p20" xml:lang="ko">중복된 레코드를 제거합니다. NODUPKEY는 중복된 키가 있는 레코드를, NODUPRECS는 중복된 레코드를 제거합니다.</Text>
+                        <Text obj="p21" xml:lang="zh-CN">删除重复记录。NODUPKEY 删除具有重复键的记录，NODUPRECS 删除重复记录。</Text>
+                        <Text obj="p22" xml:lang="es">Elimina registros duplicados, NODUPKEY elimina registros con claves duplicadas y NODUPRECS elimina registros duplicados.</Text>
+                        <Text obj="p23" xml:lang="zh-TW">移除重複記錄，NODUPKEY 會移除含有重複索引鍵的記錄，NODUPRECS 則會移除重複記錄。</Text>
+                        <Text obj="p24" xml:lang="zh-HK">移除重複記錄，NODUPKEY 會移除含有重複索引鍵的記錄，NODUPRECS 則會移除重複記錄。</Text>
+                        <Text obj="p25" xml:lang="pl">Usuwa zduplikowane rekordy. NODUPKEY usuwa rekordy ze zduplikowanymi kluczami, a NODUPRECS usuwa zduplikowane rekordy.</Text>
+                    </Description>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p26">&quot;&quot;</MapText>
+                        <MapText key="UseValueOnly" obj="p27">1</MapText>
+                        <MapText key="PropertyRole" obj="p28">SORT</MapText>
+                    </UserInfo>
+                    <ValueProvider>
+                        <StaticValueProvider dataType="StringType" obj="p29">
+                            <Values>
+                                <String index="0" obj="p30" value="NODUPKEY"></String>
+                                <String index="1" obj="p31" value="NODUPRECS"></String>
+                            </Values>
+                            <Labels>
+                                <Language obj="p32" xml:lang="en-US">
+                                    <LabelSet>
+                                        <String index="0" obj="p33" value="Remove rows with duplicate keys (NODUPKEY)"></String>
+                                        <String index="1" obj="p34" value="Remove duplicate rows (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p35" xml:lang="fr">
+                                    <LabelSet>
+                                        <String index="0" obj="p36" value="Supprimer les lignes avec clés en double (NODUPKEY)"></String>
+                                        <String index="1" obj="p37" value="Supprimer les lignes en double (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p38" xml:lang="zh-HK">
+                                    <LabelSet>
+                                        <String index="0" obj="p39" value="移除含有重複索引鍵的列 (NODUPKEY)"></String>
+                                        <String index="1" obj="p40" value="移除重複列 (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p41" xml:lang="ja">
+                                    <LabelSet>
+                                        <String index="0" obj="p42" value="キーが重複する行を削除(NODUPKEY)"></String>
+                                        <String index="1" obj="p43" value="重複する行を削除(NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p44" xml:lang="zh-TW">
+                                    <LabelSet>
+                                        <String index="0" obj="p45" value="移除含有重複索引鍵的列 (NODUPKEY)"></String>
+                                        <String index="1" obj="p46" value="移除重複列 (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p47" xml:lang="pl">
+                                    <LabelSet>
+                                        <String index="0" obj="p48" value="Usuń wiersze ze zduplikowanymi kluczami (NODUPKEY)"></String>
+                                        <String index="1" obj="p49" value="Usuń duplikaty wierszy (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p50" xml:lang="es">
+                                    <LabelSet>
+                                        <String index="0" obj="p51" value="Eliminar filas con claves duplicadas (NODUPKEY)"></String>
+                                        <String index="1" obj="p52" value="Eliminar filas duplicadas (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p53" xml:lang="de">
+                                    <LabelSet>
+                                        <String index="0" obj="p54" value="Zeilen mit doppelten Schlüsseln entfernen (NODUPKEY)"></String>
+                                        <String index="1" obj="p55" value="Doppelte Zeilen entfernen (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p56" xml:lang="ko">
+                                    <LabelSet>
+                                        <String index="0" obj="p57" value="중복된 키가 있는 행 제거(NODUPKEY)"></String>
+                                        <String index="1" obj="p58" value="중복된 행 제거(NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p59" xml:lang="it">
+                                    <LabelSet>
+                                        <String index="0" obj="p60" value="Rimuovi righe con chiavi duplicate (NODUPKEY)"></String>
+                                        <String index="1" obj="p61" value="Rimuovi righe duplicate (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p62" xml:lang="zh-CN">
+                                    <LabelSet>
+                                        <String index="0" obj="p63" value="删除具有重复键的行 (NODUPKEY)"></String>
+                                        <String index="1" obj="p64" value="删除重复行 (NODUPRECS)"></String>
+                                    </LabelSet>
+                                </Language>
+                            </Labels>
+                        </StaticValueProvider>
+                    </ValueProvider>
+                </TextDefinition>
+                <TextDefinition allowUserValues="false" minValueCount="1" name="Equals" obj="p65" promptId="PromptDef_1161285926879_599417">
+                    <Label>
+                        <Text obj="p66" xml:lang="en-US">Use the NOEQUALS option:</Text>
+                        <Text obj="p67" xml:lang="fr">Utiliser l&apos;option NOEQUALS :</Text>
+                        <Text obj="p68" xml:lang="it">Usa opzione NOEQUALS:</Text>
+                        <Text obj="p69" xml:lang="de">Option NOEQUALS verwenden:</Text>
+                        <Text obj="p70" xml:lang="ja">NOEQUALS オプションを使用:</Text>
+                        <Text obj="p71" xml:lang="ko">NOEQUALS 옵션 사용:</Text>
+                        <Text obj="p72" xml:lang="zh-CN">使用 NOEQUALS 选项:</Text>
+                        <Text obj="p73" xml:lang="es">Utilizar la opción NOEQUALS:</Text>
+                        <Text obj="p74" xml:lang="zh-TW">使用 NOEQUALS 選項:</Text>
+                        <Text obj="p75" xml:lang="zh-HK">使用 NOEQUALS 選項:</Text>
+                        <Text obj="p76" xml:lang="pl">Użyj opcji NOEQUALS:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p77" xml:lang="en-US">For rows with identical keys, NOEQUALS will not preserve the order of the rows.  The default is to preserve the order.</Text>
+                        <Text obj="p78" xml:lang="fr">Pour les lignes ayant des clés identiques, NOEQUALS ne préserve pas l&apos;ordre des lignes. Le comportement par défaut est de préserver l&apos;ordre.</Text>
+                        <Text obj="p79" xml:lang="it">Per le righe con chiavi identiche, NOEQUALS non mantiene l&apos;ordine delle righe. Il valore predefinito è mantenere tale ordine.</Text>
+                        <Text obj="p80" xml:lang="de">Bei Zeilen mit identischen Schlüsseln wird die Reihenfolge der Zeilen mit der Option NOEQUALS nicht beibehalten. Standardmäßig bleibt die Zeilenreihenfolge erhalten.</Text>
+                        <Text obj="p81" xml:lang="ja">NOEQUALSは、キーが同じ行の順序を保持しません。デフォルトは、その順序を保持します。</Text>
+                        <Text obj="p82" xml:lang="ko">동일한 키가 있는 행의 경우, NOEQUALS는 행 순서를 유지하지 않습니다. 기본적으로는 해당 순서를 유지합니다.</Text>
+                        <Text obj="p83" xml:lang="zh-CN">对于具有相同键的行，NOEQUALS 将不保留行顺序。默认情况下保留行顺序。</Text>
+                        <Text obj="p84" xml:lang="es">Para filas con claves idénticas, NOEQUALS no conservará el orden de las filas. La opción predeterminada es conservar el orden.</Text>
+                        <Text obj="p85" xml:lang="zh-TW">針對含有相同索引鍵的列，NOEQUALS 不會保留列的順序。預設是保留順序。</Text>
+                        <Text obj="p86" xml:lang="zh-HK">針對含有相同索引鍵的列，NOEQUALS 不會保留列的順序。預設是保留順序。</Text>
+                        <Text obj="p87" xml:lang="pl">Dla wierszy o identycznych kluczach NOEQUALS nie będzie zachowywał porządku wierszy. Domyślnie porządek jest zachowywany.</Text>
+                    </Description>
+                    <DefaultValue>
+                        <String obj="p88" value="Default (EQUALS)"></String>
+                    </DefaultValue>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p89">&quot;&quot;</MapText>
+                        <MapText key="UseValueOnly" obj="p90">1</MapText>
+                        <MapText key="PropertyRole" obj="p91">SORT</MapText>
+                    </UserInfo>
+                    <ValueProvider>
+                        <StaticValueProvider dataType="StringType" obj="p92">
+                            <Values>
+                                <String index="0" obj="p93" value="Default (EQUALS)"></String>
+                                <String index="1" obj="p94" value="NOEQUALS"></String>
+                            </Values>
+                            <Labels>
+                                <Language obj="p95" xml:lang="en-US">
+                                    <LabelSet>
+                                        <String index="0" obj="p96" value="No"></String>
+                                        <String index="1" obj="p97" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p98" xml:lang="fr">
+                                    <LabelSet>
+                                        <String index="0" obj="p99" value="Non"></String>
+                                        <String index="1" obj="p100" value="Oui"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p101" xml:lang="zh-HK">
+                                    <LabelSet>
+                                        <String index="0" obj="p102" value="否"></String>
+                                        <String index="1" obj="p103" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p104" xml:lang="ja">
+                                    <LabelSet>
+                                        <String index="0" obj="p105" value="No"></String>
+                                        <String index="1" obj="p106" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p107" xml:lang="zh-TW">
+                                    <LabelSet>
+                                        <String index="0" obj="p108" value="否"></String>
+                                        <String index="1" obj="p109" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p110" xml:lang="pl">
+                                    <LabelSet>
+                                        <String index="0" obj="p111" value="Nie"></String>
+                                        <String index="1" obj="p112" value="Tak"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p113" xml:lang="es">
+                                    <LabelSet>
+                                        <String index="0" obj="p114" value="No"></String>
+                                        <String index="1" obj="p115" value="Sí"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p116" xml:lang="de">
+                                    <LabelSet>
+                                        <String index="0" obj="p117" value="NEIN"></String>
+                                        <String index="1" obj="p118" value="JA"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p119" xml:lang="ko">
+                                    <LabelSet>
+                                        <String index="0" obj="p120" value="아니요"></String>
+                                        <String index="1" obj="p121" value="예"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p122" xml:lang="it">
+                                    <LabelSet>
+                                        <String index="0" obj="p123" value="No"></String>
+                                        <String index="1" obj="p124" value="Sì"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p125" xml:lang="zh-CN">
+                                    <LabelSet>
+                                        <String index="0" obj="p126" value="NO"></String>
+                                        <String index="1" obj="p127" value="YES"></String>
+                                    </LabelSet>
+                                </Language>
+                            </Labels>
+                        </StaticValueProvider>
+                    </ValueProvider>
+                </TextDefinition>
+                <TextDefinition allowUserValues="false" minValueCount="1" name="Tagsort" obj="p128" promptId="PromptDef_1161287965440_643052">
+                    <Label>
+                        <Text obj="p129" xml:lang="en-US">Use the TAGSORT option:</Text>
+                        <Text obj="p130" xml:lang="fr">Utiliser l&apos;option TAGSORT :</Text>
+                        <Text obj="p131" xml:lang="it">Usa opzione TAGSORT:</Text>
+                        <Text obj="p132" xml:lang="de">Option TAGSORT verwenden:</Text>
+                        <Text obj="p133" xml:lang="ja">TAGSORT オプションを使用:</Text>
+                        <Text obj="p134" xml:lang="ko">TAGSORT 옵션 사용:</Text>
+                        <Text obj="p135" xml:lang="zh-CN">使用 TAGSORT 选项:</Text>
+                        <Text obj="p136" xml:lang="es">Utilizar la opción TAGSORT:</Text>
+                        <Text obj="p137" xml:lang="zh-TW">使用 TAGSORT 選項:</Text>
+                        <Text obj="p138" xml:lang="zh-HK">使用 TAGSORT 選項:</Text>
+                        <Text obj="p139" xml:lang="pl">Użyj opcji TAGSORT:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p140" xml:lang="en-US">Store only the BY variables and the row numbers in the temporary files.</Text>
+                        <Text obj="p141" xml:lang="fr">Stocke uniquement les variables BY et les numéros de ligne dans les fichiers temporaires.</Text>
+                        <Text obj="p142" xml:lang="it">Memorizza soltanto le variabili BY e i numeri delle righe nei file temporanei.</Text>
+                        <Text obj="p143" xml:lang="de">Nur die BY-Variablen und die Zeilennummern in temporären Dateien speichern.</Text>
+                        <Text obj="p144" xml:lang="ja">一時ファイルにBY変数と行番号のみを保存します。</Text>
+                        <Text obj="p145" xml:lang="ko">임시 파일에 BY 변수와 행 번호만 저장합니다.</Text>
+                        <Text obj="p146" xml:lang="zh-CN">在临时文件中只储存 BY 变量和行号。</Text>
+                        <Text obj="p147" xml:lang="es">Almacenar sólo las variables BY y los números de fila en los archivos temporales.</Text>
+                        <Text obj="p148" xml:lang="zh-TW">只將 BY 變數和列數儲存至暫存檔案。</Text>
+                        <Text obj="p149" xml:lang="zh-HK">只將 BY 變數和列數儲存至暫存檔案。</Text>
+                        <Text obj="p150" xml:lang="pl">W plikach tymczasowych przechowuje tylko zmienne grupujące i numery wierszy.</Text>
+                    </Description>
+                    <DefaultValue>
+                        <String obj="p151" value="Default (no TAGSORT)"></String>
+                    </DefaultValue>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p152">&quot;&quot;</MapText>
+                        <MapText key="UseValueOnly" obj="p153">1</MapText>
+                        <MapText key="PropertyRole" obj="p154">SORT</MapText>
+                    </UserInfo>
+                    <ValueProvider>
+                        <StaticValueProvider dataType="StringType" obj="p155">
+                            <Values>
+                                <String index="0" obj="p156" value="Default (no TAGSORT)"></String>
+                                <String index="1" obj="p157" value="TAGSORT"></String>
+                            </Values>
+                            <Labels>
+                                <Language obj="p158" xml:lang="en-US">
+                                    <LabelSet>
+                                        <String index="0" obj="p159" value="No"></String>
+                                        <String index="1" obj="p160" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p161" xml:lang="fr">
+                                    <LabelSet>
+                                        <String index="0" obj="p162" value="Non"></String>
+                                        <String index="1" obj="p163" value="Oui"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p164" xml:lang="zh-HK">
+                                    <LabelSet>
+                                        <String index="0" obj="p165" value="否"></String>
+                                        <String index="1" obj="p166" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p167" xml:lang="ja">
+                                    <LabelSet>
+                                        <String index="0" obj="p168" value="No"></String>
+                                        <String index="1" obj="p169" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p170" xml:lang="zh-TW">
+                                    <LabelSet>
+                                        <String index="0" obj="p171" value="否"></String>
+                                        <String index="1" obj="p172" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p173" xml:lang="pl">
+                                    <LabelSet>
+                                        <String index="0" obj="p174" value="Nie"></String>
+                                        <String index="1" obj="p175" value="Tak"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p176" xml:lang="es">
+                                    <LabelSet>
+                                        <String index="0" obj="p177" value="No"></String>
+                                        <String index="1" obj="p178" value="Sí"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p179" xml:lang="de">
+                                    <LabelSet>
+                                        <String index="0" obj="p180" value="NEIN"></String>
+                                        <String index="1" obj="p181" value="JA"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p182" xml:lang="ko">
+                                    <LabelSet>
+                                        <String index="0" obj="p183" value="아니요"></String>
+                                        <String index="1" obj="p184" value="예"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p185" xml:lang="it">
+                                    <LabelSet>
+                                        <String index="0" obj="p186" value="No"></String>
+                                        <String index="1" obj="p187" value="Sì"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p188" xml:lang="zh-CN">
+                                    <LabelSet>
+                                        <String index="0" obj="p189" value="NO"></String>
+                                        <String index="1" obj="p190" value="YES"></String>
+                                    </LabelSet>
+                                </Language>
+                            </Labels>
+                        </StaticValueProvider>
+                    </ValueProvider>
+                </TextDefinition>
+                <TextDefinition allowUserValues="false" minValueCount="1" name="Force" obj="p191" promptId="PromptDef_1161287965439_854410">
+                    <Label>
+                        <Text obj="p192" xml:lang="en-US">Use the FORCE option:</Text>
+                        <Text obj="p193" xml:lang="fr">Utiliser l&apos;option FORCE :</Text>
+                        <Text obj="p194" xml:lang="it">Usa opzione FORCE:</Text>
+                        <Text obj="p195" xml:lang="de">Option FORCE verwenden:</Text>
+                        <Text obj="p196" xml:lang="ja">FORCE オプションを使用:</Text>
+                        <Text obj="p197" xml:lang="ko">FORCE 옵션 사용:</Text>
+                        <Text obj="p198" xml:lang="zh-CN">使用 FORCE 选项:</Text>
+                        <Text obj="p199" xml:lang="es">Utilizar la opción FORCE:</Text>
+                        <Text obj="p200" xml:lang="zh-TW">使用強制選項:</Text>
+                        <Text obj="p201" xml:lang="zh-HK">使用強制選項:</Text>
+                        <Text obj="p202" xml:lang="pl">Użyj opcji FORCE:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p203" xml:lang="en-US">Force the sort even if the table is indexed.</Text>
+                        <Text obj="p204" xml:lang="fr">Impose le tri même si la table est indexée.</Text>
+                        <Text obj="p205" xml:lang="it">Forza ordinamento anche se la tabella è indicizzata.</Text>
+                        <Text obj="p206" xml:lang="de">Sortierung erzwingen, auch bei indizierter Tabelle.</Text>
+                        <Text obj="p207" xml:lang="ja">インデックス付きテーブルも並べ替えます。</Text>
+                        <Text obj="p208" xml:lang="ko">테이블 인덱스가 생성된 경우에도 정렬을 수행합니다.</Text>
+                        <Text obj="p209" xml:lang="zh-CN">强制执行排序，即使表中已创建索引。</Text>
+                        <Text obj="p210" xml:lang="es">Fuerza la ordenación incluso aunque la tabla esté indexada.</Text>
+                        <Text obj="p211" xml:lang="zh-TW">即使已編製表格的索引，還是強制排序。</Text>
+                        <Text obj="p212" xml:lang="zh-HK">即使已編製表格的索引，還是強制排序。</Text>
+                        <Text obj="p213" xml:lang="pl">Wymusza sortowanie, nawet jeśli tabela jest indeksowana.</Text>
+                    </Description>
+                    <DefaultValue>
+                        <String obj="p214" value="Default (no FORCE)"></String>
+                    </DefaultValue>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p215">&quot;&quot;</MapText>
+                        <MapText key="UseValueOnly" obj="p216">1</MapText>
+                        <MapText key="PropertyRole" obj="p217">SORT</MapText>
+                    </UserInfo>
+                    <ValueProvider>
+                        <StaticValueProvider dataType="StringType" obj="p218">
+                            <Values>
+                                <String index="0" obj="p219" value="Default (no FORCE)"></String>
+                                <String index="1" obj="p220" value="FORCE"></String>
+                            </Values>
+                            <Labels>
+                                <Language obj="p221" xml:lang="en-US">
+                                    <LabelSet>
+                                        <String index="0" obj="p222" value="No"></String>
+                                        <String index="1" obj="p223" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p224" xml:lang="fr">
+                                    <LabelSet>
+                                        <String index="0" obj="p225" value="Non"></String>
+                                        <String index="1" obj="p226" value="Oui"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p227" xml:lang="zh-HK">
+                                    <LabelSet>
+                                        <String index="0" obj="p228" value="否"></String>
+                                        <String index="1" obj="p229" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p230" xml:lang="ja">
+                                    <LabelSet>
+                                        <String index="0" obj="p231" value="No"></String>
+                                        <String index="1" obj="p232" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p233" xml:lang="zh-TW">
+                                    <LabelSet>
+                                        <String index="0" obj="p234" value="否"></String>
+                                        <String index="1" obj="p235" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p236" xml:lang="pl">
+                                    <LabelSet>
+                                        <String index="0" obj="p237" value="Nie"></String>
+                                        <String index="1" obj="p238" value="Tak"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p239" xml:lang="es">
+                                    <LabelSet>
+                                        <String index="0" obj="p240" value="No"></String>
+                                        <String index="1" obj="p241" value="Sí"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p242" xml:lang="de">
+                                    <LabelSet>
+                                        <String index="0" obj="p243" value="NEIN"></String>
+                                        <String index="1" obj="p244" value="JA"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p245" xml:lang="ko">
+                                    <LabelSet>
+                                        <String index="0" obj="p246" value="아니요"></String>
+                                        <String index="1" obj="p247" value="예"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p248" xml:lang="it">
+                                    <LabelSet>
+                                        <String index="0" obj="p249" value="No"></String>
+                                        <String index="1" obj="p250" value="Sì"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p251" xml:lang="zh-CN">
+                                    <LabelSet>
+                                        <String index="0" obj="p252" value="NO"></String>
+                                        <String index="1" obj="p253" value="YES"></String>
+                                    </LabelSet>
+                                </Language>
+                            </Labels>
+                        </StaticValueProvider>
+                    </ValueProvider>
+                </TextDefinition>
+            </DefinitionsAndSubgroups>
+            <Label>
+                <Text obj="p254" xml:lang="en-US">SAS Sort</Text>
+                <Text obj="p255" xml:lang="fr">Tri SAS</Text>
+                <Text obj="p256" xml:lang="it">Ordinamento SAS</Text>
+                <Text obj="p257" xml:lang="de">SAS Sort</Text>
+                <Text obj="p258" xml:lang="ja">ソート</Text>
+                <Text obj="p259" xml:lang="ko">SAS 정렬</Text>
+                <Text obj="p260" xml:lang="zh-CN">SAS 排序</Text>
+                <Text obj="p261" xml:lang="es">SAS Sort</Text>
+                <Text obj="p262" xml:lang="zh-TW">SAS 排序</Text>
+                <Text obj="p263" xml:lang="zh-HK">SAS 排序</Text>
+                <Text obj="p264" xml:lang="pl">Sortowanie SAS-owe</Text>
+            </Label>
+            <Description>
+                <Text obj="p265" xml:lang="en-US">Basic SAS Sort Procedure Options</Text>
+                <Text obj="p266" xml:lang="fr">Options de procédure de tri SAS de base</Text>
+                <Text obj="p267" xml:lang="it">Opzioni della procedura Sort SAS di base</Text>
+                <Text obj="p268" xml:lang="de">Grundlegende Optionen für die Prozedur SAS Sort</Text>
+                <Text obj="p269" xml:lang="ja">SASソートプロシジャの基本オプション</Text>
+                <Text obj="p270" xml:lang="ko">기본 SAS 정렬 프로시저 옵션</Text>
+                <Text obj="p271" xml:lang="zh-CN">基本 SAS 排序过程选项</Text>
+                <Text obj="p272" xml:lang="es">Opciones del procedimiento SAS Sort básico</Text>
+                <Text obj="p273" xml:lang="zh-TW">基本 SAS 排序程序選項</Text>
+                <Text obj="p274" xml:lang="zh-HK">基本 SAS 排序程序選項</Text>
+                <Text obj="p275" xml:lang="pl">Podstawowe opcje procedury SORT SAS-a</Text>
+            </Description>
+        </PromptGroup>
+        <PromptGroup obj="p276" promptId="PromptGroup_1268234328834_350926">
+            <DefinitionsAndSubgroups>
+                <TextDefinition name="sortseq" obj="p277" promptId="PromptDef_1161287965442_388071">
+                    <Label>
+                        <Text obj="p278" xml:lang="en-US">Collating sequence:</Text>
+                        <Text obj="p279" xml:lang="fr">Classement des caractères :</Text>
+                        <Text obj="p280" xml:lang="it">Sequenza di ordinamento:</Text>
+                        <Text obj="p281" xml:lang="de">Sortierfolge:</Text>
+                        <Text obj="p282" xml:lang="ja">照合順序:</Text>
+                        <Text obj="p283" xml:lang="ko">정렬 순서</Text>
+                        <Text obj="p284" xml:lang="zh-CN">排序序列:</Text>
+                        <Text obj="p285" xml:lang="es">Secuencias de intercalación:</Text>
+                        <Text obj="p286" xml:lang="zh-TW">定序序列:</Text>
+                        <Text obj="p287" xml:lang="zh-HK">定序序列:</Text>
+                        <Text obj="p288" xml:lang="pl">Sekwencja zestawiania:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p289" xml:lang="en-US">Specify the collating-sequence to use in the SORTSEQ= option.</Text>
+                        <Text obj="p290" xml:lang="fr">Spécifie l&apos;ordre de classement des caractères à utiliser dans l&apos;option SORTSEQ=.</Text>
+                        <Text obj="p291" xml:lang="it">Specifica la sequenza di ordinamento da utilizzare nella opzione SORTSEQ=.</Text>
+                        <Text obj="p292" xml:lang="de">Geben Sie die Sortierfolge an, die mit der Option SORTSEQ= verwendet wird</Text>
+                        <Text obj="p293" xml:lang="ja">SORTSEQ=オプションで使用する照合順序を指定します。</Text>
+                        <Text obj="p294" xml:lang="ko">SORTSEQ= 옵션에 사용할 정렬 순서를 지정합니다.</Text>
+                        <Text obj="p295" xml:lang="zh-CN">指定要在 SORTSEQ= 选项中使用的排序序列。</Text>
+                        <Text obj="p296" xml:lang="es">Especificar la sentencia de intercalación que se va a utilizar con la opción SORTSEQ=.</Text>
+                        <Text obj="p297" xml:lang="zh-TW">指定用於 SORTSEQ= 選項中的定序序列。</Text>
+                        <Text obj="p298" xml:lang="zh-HK">指定用於 SORTSEQ= 選項中的定序序列。</Text>
+                        <Text obj="p299" xml:lang="pl">Podaje sekwencję zestawiania używaną w opcji SORTSEQ=.</Text>
+                    </Description>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p300">=</MapText>
+                        <MapText key="PropertyRole" obj="p301">SORT</MapText>
+                    </UserInfo>
+                </TextDefinition>
+                <TextDefinition name="sortsize" obj="p302" promptId="PromptDef_1161287965443_239080">
+                    <Label>
+                        <Text obj="p303" xml:lang="en-US">Specify the available memory:</Text>
+                        <Text obj="p304" xml:lang="fr">Spécifier la mémoire disponible :</Text>
+                        <Text obj="p305" xml:lang="it">Specifica memoria disponibile:</Text>
+                        <Text obj="p306" xml:lang="de">Verfügbaren Speicher angeben:</Text>
+                        <Text obj="p307" xml:lang="ja">使用可能なメモリの指定:</Text>
+                        <Text obj="p308" xml:lang="ko">사용 가능한 메모리 지정:</Text>
+                        <Text obj="p309" xml:lang="zh-CN">指定可用内存:</Text>
+                        <Text obj="p310" xml:lang="es">Especifique la memoria disponible:</Text>
+                        <Text obj="p311" xml:lang="zh-TW">指定可用的記憶體:</Text>
+                        <Text obj="p312" xml:lang="zh-HK">指定可用的記憶體:</Text>
+                        <Text obj="p313" xml:lang="pl">Podaj dostępną pamięć:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p314" xml:lang="en-US">Specifies the maximum amount of memory available for PROC SORT.</Text>
+                        <Text obj="p315" xml:lang="fr">Spécifie la quantité max. de mémoire disponible pour PROC SORT.</Text>
+                        <Text obj="p316" xml:lang="it">Specifica la quantità massima di memoria disponibile per la PROC SORT.</Text>
+                        <Text obj="p317" xml:lang="de">Legt den maximal verfügbaren Speicher für PROC SORT fest.</Text>
+                        <Text obj="p318" xml:lang="ja">PROC SORTで使用できるメモリの最大量を指定します。</Text>
+                        <Text obj="p319" xml:lang="ko">PROC SORT에 사용할 수 있는 최대 메모리 용량을 지정합니다.</Text>
+                        <Text obj="p320" xml:lang="zh-CN">指定可用于 PROC SORT 的最大内存数量。</Text>
+                        <Text obj="p321" xml:lang="es">Especifica la cantidad máxima de memoria disponible para PROC SORT.</Text>
+                        <Text obj="p322" xml:lang="zh-TW">指定可用於 PROC SORT 的最大記憶體數量。</Text>
+                        <Text obj="p323" xml:lang="zh-HK">指定可用於 PROC SORT 的最大記憶體數量。</Text>
+                        <Text obj="p324" xml:lang="pl">Określa maksymalną ilość pamięci dostępną dla PROC SORT.</Text>
+                    </Description>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p325">=</MapText>
+                        <MapText key="PropertyRole" obj="p326">SORT</MapText>
+                    </UserInfo>
+                </TextDefinition>
+                <TextDefinition name="ProcSortOptions" obj="p327" promptId="PromptDef_1161287965444_570064">
+                    <Label>
+                        <Text obj="p328" xml:lang="en-US">Specify additional PROC SORT options:</Text>
+                        <Text obj="p329" xml:lang="fr">Spécifier les options supplémentaires de PROC SORT :</Text>
+                        <Text obj="p330" xml:lang="it">Specifica opzioni aggiuntive della PROC SORT:</Text>
+                        <Text obj="p331" xml:lang="de">Zusätzliche Optionen für PROC SORT angeben:</Text>
+                        <Text obj="p332" xml:lang="ja">PROC SORT の追加オプションの指定:</Text>
+                        <Text obj="p333" xml:lang="ko">추가 PROC SORT 옵션 지정:</Text>
+                        <Text obj="p334" xml:lang="zh-CN">指定其他 PROC SORT 选项:</Text>
+                        <Text obj="p335" xml:lang="es">Especifique otras opciones de PROC SORT:</Text>
+                        <Text obj="p336" xml:lang="zh-TW">指定其他 PROC SORT 選項:</Text>
+                        <Text obj="p337" xml:lang="zh-HK">指定其他 PROC SORT 選項:</Text>
+                        <Text obj="p338" xml:lang="pl">Podaj dodatkowe opcje PROC SORT:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p339" xml:lang="en-US">Additional options to include on the PROC SORT statement, separated by spaces.</Text>
+                        <Text obj="p340" xml:lang="fr">Options supplémentaires à inclure dans l&apos;instruction PROC SORT, séparées par des espaces.</Text>
+                        <Text obj="p341" xml:lang="it">Ulteriori opzioni da includere nell&apos;istruzione PROC SORT, separate da spazi.</Text>
+                        <Text obj="p342" xml:lang="de">Zusätzliche Optionen, die in der PROC Sort-Anweisung verwendet werden können (durch Leerzeichen getrennt).</Text>
+                        <Text obj="p343" xml:lang="ja">PROC RANKステートメントに含まれる、スペースで区切られた追加オプションです。</Text>
+                        <Text obj="p344" xml:lang="ko">PROC SORT 문에 포함되는 추가 옵션입니다(공백으로 구분).</Text>
+                        <Text obj="p345" xml:lang="zh-CN">要包括在 PROC SORT 语句中的其他选项，以空格分隔。</Text>
+                        <Text obj="p346" xml:lang="es">Otras opciones para incluir en la sentencia PROC SORT, separadas por espacios.</Text>
+                        <Text obj="p347" xml:lang="zh-TW">要併入 PROC SORT 陳述式的其他選項，以空格隔開。</Text>
+                        <Text obj="p348" xml:lang="zh-HK">要併入 PROC SORT 陳述式的其他選項，以空格隔開。</Text>
+                        <Text obj="p349" xml:lang="pl">Dodatkowe opcje wstawiane do instrukcji PROC SORT, oddzielane spacjami.</Text>
+                    </Description>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p350">&quot;&quot;</MapText>
+                        <MapText key="UseValueOnly" obj="p351">1</MapText>
+                        <MapText key="PropertyRole" obj="p352">SORT</MapText>
+                    </UserInfo>
+                </TextDefinition>
+                <TextDefinition allowUserValues="false" minValueCount="1" name="Overwrite" obj="p353" promptId="PromptDef_1161287965440_643155">
+                    <Label>
+                        <Text obj="p354" xml:lang="en-US">Use the OVERWRITE option:</Text>
+                        <Text obj="p355" xml:lang="fr">Utiliser l&apos;option OVERWRITE :</Text>
+                        <Text obj="p356" xml:lang="it">Usa opzione OVERWRITE:</Text>
+                        <Text obj="p357" xml:lang="de">Option OVERWRITE verwenden:</Text>
+                        <Text obj="p358" xml:lang="ja">OVERWRITE オプションを使用:</Text>
+                        <Text obj="p359" xml:lang="ko">OVERWRITE 옵션 사용:</Text>
+                        <Text obj="p360" xml:lang="zh-CN">使用 OVERWRITE 选项:</Text>
+                        <Text obj="p361" xml:lang="es">Utilizar la opción OVERWRITE:</Text>
+                        <Text obj="p362" xml:lang="zh-TW">使用覆寫選項:</Text>
+                        <Text obj="p363" xml:lang="zh-HK">使用覆寫選項:</Text>
+                        <Text obj="p364" xml:lang="pl">Użyj opcji OVERWRITE:</Text>
+                    </Label>
+                    <Description>
+                        <Text obj="p365" xml:lang="en-US">Enables the input table to be deleted before the replacement output table is populated.  Because the input table is deleted, data will be lost if a failure occurs while the output table is being written.</Text>
+                        <Text obj="p366" xml:lang="fr">Permet de supprimer la table d&apos;entrée avant que la table de sortie de remplacement ne soit chargée. Comme la table d&apos;entrée est supprimée, les données seront perdues s&apos;il y a un échec lors du chargement de la table de sortie.</Text>
+                        <Text obj="p367" xml:lang="it">Consente di eliminare la tabella di input prima che la tabella di output sostitutiva sia popolata. Poiché la tabella di input è eliminata, i dati andranno persi se si verifica un errore mentre la tabella di output viene scritta.</Text>
+                        <Text obj="p368" xml:lang="de">Ermöglicht das Löschen der Eingabetabelle vor dem Auffüllen der ersetzten Ausgabetabelle. Durch das Löschen der Eingabetabelle können bei einem möglichen Fehler während des Schreibens der Ausgabetabelle Daten verloren gehen.</Text>
+                        <Text obj="p369" xml:lang="ja">入力テーブルを削除してから置換出力テーブルを作成します。入力テーブルが削除されるため、出力テーブルに書き込む際にエラーが発生するとデータが失われます。</Text>
+                        <Text obj="p370" xml:lang="ko">대체 출력 테이블을 입력하기 전에 입력 테이블을 삭제할 수 있습니다. 입력 테이블이 삭제되었기 때문에 출력 테이블 기록 중 오류가 발생하면 데이터를 잃습니다.</Text>
+                        <Text obj="p371" xml:lang="zh-CN">启用在填充替换输出表之前删除输入表的功能。由于输入表被删除，所以若写入输出表时出错，数据将会丢失。</Text>
+                        <Text obj="p372" xml:lang="es">Activa la tabla de entrada para poder ser eliminada antes de rellenar la tabla de salida que la reemplazará. Al eliminar la tabla de entrada, los datos se perderán si se produce algún fallo mientras se está escribiendo la tabla de salida.</Text>
+                        <Text obj="p373" xml:lang="zh-TW">先刪除輸入表格，再填入取代輸出表格。因為已刪除輸入表格，所以如果在寫入輸出表格時失敗則會遺失資料。</Text>
+                        <Text obj="p374" xml:lang="zh-HK">先刪除輸入表格，再填入取代輸出表格。因為已刪除輸入表格，所以如果在寫入輸出表格時失敗則會遺失資料。</Text>
+                        <Text obj="p375" xml:lang="pl">Umożliwia usunięcie tabeli wejściowej przed wypełnieniem zastępującej ją tabeli wynikowej. Ponieważ tabela wejściowa jest usuwana, jeśli podczas zapisywanie tabeli wynikowej nastąpi awaria dane zostaną utracone.</Text>
+                    </Description>
+                    <DefaultValue>
+                        <String obj="p376" value="Default (no overwrite)"></String>
+                    </DefaultValue>
+                    <UserInfo>
+                        <MapText key="Delimiter" obj="p377">&quot;&quot;</MapText>
+                        <MapText key="UseValueOnly" obj="p378">1</MapText>
+                        <MapText key="PropertyRole" obj="p379">SORT</MapText>
+                    </UserInfo>
+                    <ValueProvider>
+                        <StaticValueProvider dataType="StringType" obj="p380">
+                            <Values>
+                                <String index="0" obj="p381" value="Default (no overwrite)"></String>
+                                <String index="1" obj="p382" value="OVERWRITE"></String>
+                            </Values>
+                            <Labels>
+                                <Language obj="p383" xml:lang="en-US">
+                                    <LabelSet>
+                                        <String index="0" obj="p384" value="No"></String>
+                                        <String index="1" obj="p385" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p386" xml:lang="fr">
+                                    <LabelSet>
+                                        <String index="0" obj="p387" value="Non"></String>
+                                        <String index="1" obj="p388" value="Oui"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p389" xml:lang="zh-HK">
+                                    <LabelSet>
+                                        <String index="0" obj="p390" value="否"></String>
+                                        <String index="1" obj="p391" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p392" xml:lang="ja">
+                                    <LabelSet>
+                                        <String index="0" obj="p393" value="No"></String>
+                                        <String index="1" obj="p394" value="Yes"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p395" xml:lang="zh-TW">
+                                    <LabelSet>
+                                        <String index="0" obj="p396" value="否"></String>
+                                        <String index="1" obj="p397" value="是"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p398" xml:lang="pl">
+                                    <LabelSet>
+                                        <String index="0" obj="p399" value="Nie"></String>
+                                        <String index="1" obj="p400" value="Tak"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p401" xml:lang="es">
+                                    <LabelSet>
+                                        <String index="0" obj="p402" value="No"></String>
+                                        <String index="1" obj="p403" value="Sí"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p404" xml:lang="de">
+                                    <LabelSet>
+                                        <String index="0" obj="p405" value="NEIN"></String>
+                                        <String index="1" obj="p406" value="JA"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p407" xml:lang="ko">
+                                    <LabelSet>
+                                        <String index="0" obj="p408" value="아니요"></String>
+                                        <String index="1" obj="p409" value="예"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p410" xml:lang="it">
+                                    <LabelSet>
+                                        <String index="0" obj="p411" value="No"></String>
+                                        <String index="1" obj="p412" value="Sì"></String>
+                                    </LabelSet>
+                                </Language>
+                                <Language obj="p413" xml:lang="zh-CN">
+                                    <LabelSet>
+                                        <String index="0" obj="p414" value="NO"></String>
+                                        <String index="1" obj="p415" value="YES"></String>
+                                    </LabelSet>
+                                </Language>
+                            </Labels>
+                        </StaticValueProvider>
+                    </ValueProvider>
+                </TextDefinition>
+            </DefinitionsAndSubgroups>
+            <Label>
+                <Text obj="p416" xml:lang="en-US">Advanced</Text>
+                <Text obj="p417" xml:lang="fr">Avancées</Text>
+                <Text obj="p418" xml:lang="it">Avanzate</Text>
+                <Text obj="p419" xml:lang="de">Erweitert</Text>
+                <Text obj="p420" xml:lang="ja">詳細</Text>
+                <Text obj="p421" xml:lang="ko">고급</Text>
+                <Text obj="p422" xml:lang="zh-CN">高级</Text>
+                <Text obj="p423" xml:lang="es">Avanzado</Text>
+                <Text obj="p424" xml:lang="zh-TW">進階</Text>
+                <Text obj="p425" xml:lang="zh-HK">進階</Text>
+                <Text obj="p426" xml:lang="pl">Zaawansowane</Text>
+            </Label>
+            <Description>
+                <Text obj="p427" xml:lang="en-US">Advanced SAS Sort Procedure Options</Text>
+                <Text obj="p428" xml:lang="fr">Options avancées de la procédure SAS de tri</Text>
+                <Text obj="p429" xml:lang="it">Opzioni avanzate della procedura Sort SAS</Text>
+                <Text obj="p430" xml:lang="de">Erweiterte Optionen für die Prozedur SAS Sort</Text>
+                <Text obj="p431" xml:lang="ja">SASソートプロシジャの詳細オプション</Text>
+                <Text obj="p432" xml:lang="ko">고급 SAS 정렬 프로시저 옵션</Text>
+                <Text obj="p433" xml:lang="zh-CN">高级 SAS 排序过程选项</Text>
+                <Text obj="p434" xml:lang="es">Opciones del procedimiento SAS Sort avanzadas</Text>
+                <Text obj="p435" xml:lang="zh-TW">進階 SAS 排序程序選項</Text>
+                <Text obj="p436" xml:lang="zh-HK">進階 SAS 排序程序選項</Text>
+                <Text obj="p437" xml:lang="pl">Zaawansowane opcje procedury SORT SAS-a</Text>
+            </Description>
+        </PromptGroup>
+    </DefinitionsAndSubgroups>
+    <Label>
+        <Text obj="p438" xml:lang="en-US">Options</Text>
+        <Text obj="p439" xml:lang="fr">Options</Text>
+        <Text obj="p440" xml:lang="it">Opzioni</Text>
+        <Text obj="p441" xml:lang="de">Optionen</Text>
+        <Text obj="p442" xml:lang="ja">オプション</Text>
+        <Text obj="p443" xml:lang="ko">옵션</Text>
+        <Text obj="p444" xml:lang="zh-CN">选项</Text>
+        <Text obj="p445" xml:lang="es">Opciones</Text>
+        <Text obj="p446" xml:lang="zh-TW">選項</Text>
+        <Text obj="p447" xml:lang="zh-HK">選項</Text>
+        <Text obj="p448" xml:lang="pl">Opcje</Text>
+    </Label>
+    <Description>
+        <Text obj="p449" xml:lang="en-US">Root Group For Prompts</Text>
+        <Text obj="p450" xml:lang="fr">Groupe racine pour les invites</Text>
+        <Text obj="p451" xml:lang="it">Gruppo principale per prompt</Text>
+        <Text obj="p452" xml:lang="de">Gruppenstammverzeichnis für Eingabeaufforderungen</Text>
+        <Text obj="p453" xml:lang="ja">プロンプトのルートグループ</Text>
+        <Text obj="p454" xml:lang="ko">프롬프트의 루트 그룹</Text>
+        <Text obj="p455" xml:lang="zh-CN">用于提示的根组</Text>
+        <Text obj="p456" xml:lang="es">Grupo principal para Prompts</Text>
+        <Text obj="p457" xml:lang="zh-TW">提示的根群組</Text>
+        <Text obj="p458" xml:lang="zh-HK">提示的根群組</Text>
+        <Text obj="p459" xml:lang="pl">Grupa główna dla podpowiedzi</Text>
+    </Description>
+</PromptGroup>
